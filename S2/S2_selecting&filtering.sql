@@ -149,17 +149,6 @@ on department.dept_id = employees.dept_id;
 
 
 
--- COUNT AGGREGATION
-select * from gadgets;
--- ilan lahat ng benta natin 
-SELECT COUNT(*) FROM Gadgets;
-
--- SUM AGGREGATION
-select * from employees;
--- SUM AGGREGATION
-select * from employees;
-SELECT SUM(salary) FROM Employees WHERE department = 'IT';
-
 
 
 
