@@ -25,7 +25,7 @@ ORDER BY total_completed_orders DESC;
 
 
 
--- sum 
+-- SUM 
 select sum(amount) as tristan_sales 
 from sales 
 where customers = "itan"; 
@@ -71,7 +71,7 @@ GROUP BY e.employee_name;
 
 
 
--- group by 
+-- GROUP BY 
 SELECT
     employee,
     SUM(amount)
@@ -110,6 +110,51 @@ SELECT
 FROM sales
 GROUP BY employee
 HAVING SUM(amount) > 3000;
+
+
+
+
+
+-- HAVING
+
+
+SELECT 
+	employee_name, 
+    SUM(amount) as total_sales
+FROM sales 
+GROUP BY employee 
+HAVING SUM(amount) > 3000;
+
+-- Show IT employees whose total sales exceed 5000.
+SELECT 
+	employee_name,
+    SUM(amount) as total_sales
+FROM sales
+WHERE department = 'IT'
+GROUP BY employee 
+HAVING SUM(amount) >  5000; 
+
+-- Show IT employees whose total sales exceed 5000.
+SELECT 
+	c.customer_name, 
+    Sum(o.total) AS total_spent
+FROM customer c 
+Inner join orders o 
+on c.customer_id = o.customer_id 
+group by c.customer_name; 
+
+
+-- Show total orders of Manila customers.
+Select 
+	c.customer_name, 
+    sum(o.total) as total_sales
+From customer c 
+Inner join orders o 
+On c.customer_id = o.customer_id 
+where c.city = 'Manila'
+Group by c.customer_name; 
+
+
 
 
 

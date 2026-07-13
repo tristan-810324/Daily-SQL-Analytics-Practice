@@ -132,19 +132,6 @@ select name, department, salary from employees
 where department in ("it","hr")
 order by salary asc; 
 
--- 3 JOINS
-select * from employees;
-
--- 3.1  INNER JOINS
-SELECT 
-    Employees.name, 
-    Employees.department, 
-    Departments.dept_name
-FROM Employees
-INNER JOIN Departments ON Employees.dept_id = Departments.dept_id;
-
-select  * from departments inner join employees
-on department.dept_id = employees.dept_id;
 
 
 
