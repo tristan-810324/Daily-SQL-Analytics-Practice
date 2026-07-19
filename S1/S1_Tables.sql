@@ -1,3 +1,5 @@
+/*  Understanding how primary keys, foreign keys works  and how to 
+buid proper relationships on tables */ 
 
 CREATE DATABASE hustle_app; 
 USE hustle_app;
