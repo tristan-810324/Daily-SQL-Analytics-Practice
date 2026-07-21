@@ -155,7 +155,7 @@ FROM movies
 WHERE ticket_price <= 300;
 
 
--- Challenge 12: Find all Action movies
+-- Challenge 12: Find all Action movie
 
 SELECT *
 FROM movies
