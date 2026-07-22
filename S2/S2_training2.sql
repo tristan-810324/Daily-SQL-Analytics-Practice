@@ -75,5 +75,3 @@ INSERT INTO reservations VALUES
 (6, 2, 1, 3, '2026-07-30 14:00:00', '2026-08-02 12:00:00');
 
 
-SELECT * FROM reservations;
-select * from guests; 
