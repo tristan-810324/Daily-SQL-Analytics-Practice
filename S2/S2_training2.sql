@@ -180,13 +180,32 @@ INSERT INTO reservations VALUES
     like '%gmail.com'; 
     
 -- Challenge 21: Find rooms whose room_type is Standard or Suite
+
+    select * from rooms
+    where room_type
+    in ('standard' , 'suite'); 
 	
     
 
 -- Challenge 22: Find receptionists whose shift is morning or evening
 
+    select * from  receptionists
+    where shift 
+    in ('morning' , 'evening'); 
+
 -- Challenge 23: Find Standard rooms with price_per_night less than 2000 and sort by price_per_night ascending
+
+    select * from rooms
+    where price_per_night < 2000 
+    order by price_per_night asc; 
 
 -- Challenge 24: Find rooms with price_per_night greater than 3000
 
+    select * from rooms
+    where price_per_night > 3000; 
+
 -- Challenge 25: Find guests whose name starts with 'T'
+
+    select * from guests
+    where guest_name
+    like 't%';
