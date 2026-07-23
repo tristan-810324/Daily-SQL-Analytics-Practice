@@ -95,6 +95,98 @@ INSERT INTO order_items VALUES
 (7,5,2,1),
 (8,5,6,2);
 
+-- Part A — INNER JOIN
+-- Challenge 1: Show order_id and customer_name.
+	select 
+		customer_name, 
+		order_id 
+    from customers c 
+    inner join  orders o 
+	on c.customer_id  = o.customer_id; 
+
+-- Challenge 2: Show order_id, customer_name, and order_date.
+    select 
+		order_id, 
+        customer_name, 
+        order_date
+	from customers c 
+    inner join orders o 
+    on c.customer_id = o.customer_id; 
+
+-- Challenge 3: Show employee_name and order_date.
+	SELECT
+		e.employee_name,
+		o.order_date
+	FROM employees e
+	INNER JOIN orders o
+	ON e.employee_id = o.employee_id;
+
+-- Challenge 4: Show order_id and employee_name.
+
+-- Challenge 5: Show customer_name and employee_name for every order.
+
+-- Challenge 6: Show product_name and quantity.
+
+-- Challenge 7: Show order_id, product_name, and quantity.
+
+-- Challenge 8: Show customer_name, product_name, and quantity.
+
+-- Challenge 9: Show customer_name and all products they purchased.
+
+-- Challenge 10: Show order_date and product_name.
+
+
+
+
+-- Part B — INNER JOIN + WHERE
+
+
+-- Challenge 11: Show all orders made by Tristan Bautista.
+
+-- Challenge 12: Show all products purchased by Maria Santos.
+
+-- Challenge 13: Show all Electronics products ordered.
+
+-- Challenge 14: Show products with price greater than 3000.
+
+-- Challenge 15: Show orders handled by Alex.
+
+-- Challenge 16: Show all Accessories products.
+
+-- Challenge 17: Show all orders from Quezon City customers.
+
+-- Challenge 18: Show all products purchased on 2026-07-21.
+
+-- Challenge 19: Show all products purchased by customers from Manila.
+
+-- Challenge 20: Show orders handled by the Manager.
+ 
+
+
+ -- Part C — INNER JOIN + ORDER BY COMMENT
+
+-- Challenge 21: Show all purchased products sorted by price (Highest to Lowest).
+
+-- Challenge 22: Show customers sorted alphabetically with their orders.
+
+-- Challenge 23: Show products sorted by quantity (Highest to Lowest).
+
+-- Challenge 24: Show orders sorted by order_date (Newest to Oldest).
+
+-- Challenge 25: Show employees sorted alphabetically with the orders they handled.
+
+
+-- Part D — LEFT JOIN 
+
+-- Challenge 26: Show all customers, even those without orders.
+
+-- Challenge 27: Show all products, even if they have never been ordered.
+
+-- Challenge 28: Show all employees, even if they never handled an order.
+
+-- Challenge 29: Show customers who have never placed an order.
+
+-- Challenge 30: Show products that have never been purchased.
 
 
 
